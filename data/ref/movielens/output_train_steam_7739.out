@@ -1,0 +1,72 @@
+Current working directory: /home/msai/weichen001/.virtualenvs/LLaRA/data/ref/movielens
+Looking for u.item at: ./u.item
+Loaded 1682 movies from u.item
+Loading ./train_data.df
+
+Inspecting train_data.df:
+Total rows: 68388
+Columns: ['seq', 'len_seq', 'next']
+Sample row (raw):
+seq        [(1682, 0), (1682, 0), (1682, 0), (1682, 0), (...
+len_seq                                                    1
+next                                                (299, 5)
+Name: 0, dtype: object
+Rows after len_seq >= 3 filter: 66126
+Sample row (processed):
+seq               [299, 321, 290, 1682, 1682, 1682, 1682, 1682, ...
+len_seq                                                           3
+next                                                            297
+seq_unpad                                           [299, 321, 290]
+seq_title           [Air Force One, Murder at 1600, Absolute Power]
+next_item_name                                             Face/Off
+Name: 3, dtype: object
+Unique next items: 1525
+Min/Max len_seq: 3/10
+Sample seq_title: ['Air Force One', 'Murder at 1600', 'Absolute Power']
+Sample next_item_name: Face/Off
+Loading ./Val_data.df
+
+Inspecting Val_data.df:
+Total rows: 94
+Columns: ['seq', 'len_seq', 'next']
+Sample row (raw):
+seq        [(880, 4), (269, 5), (361, 5), (1024, 5), (881...
+len_seq                                                   10
+next                                                (321, 4)
+Name: 0, dtype: object
+Rows after len_seq >= 3 filter: 94
+Sample row (processed):
+seq               [880, 269, 361, 1024, 881, 890, 1242, 1104, 98...
+len_seq                                                          10
+next                                                            321
+seq_unpad         [880, 269, 361, 1024, 881, 890, 1242, 1104, 98...
+seq_title         [Money Talks, Gattaca, Blues Brothers 2000, Fi...
+next_item_name                                       Murder at 1600
+Name: 0, dtype: object
+Unique next items: 87
+Min/Max len_seq: 9/10
+Sample seq_title: ['Money Talks', 'Gattaca', 'Blues Brothers 2000', 'Fire Down Below', 'Washington Square', 'Bent', 'Night Flier', 'Firestorm', 'Anna Karenina', 'U Turn']
+Sample next_item_name: Murder at 1600
+Loading ./Test_data.df
+
+Inspecting Test_data.df:
+Total rows: 95
+Columns: ['seq', 'len_seq', 'next']
+Sample row (raw):
+seq        [(704, 5), (155, 3), (80, 4), (698, 4), (745, ...
+len_seq                                                   10
+next                                                  (3, 4)
+Name: 0, dtype: object
+Rows after len_seq >= 3 filter: 95
+Sample row (processed):
+seq               [704, 155, 80, 698, 745, 95, 1403, 202, 731, 432]
+len_seq                                                          10
+next                                                              3
+seq_unpad         [704, 155, 80, 698, 745, 95, 1403, 202, 731, 432]
+seq_title         [Singin' in the Rain, Reservoir Dogs, The Huds...
+next_item_name                                           Get Shorty
+Name: 0, dtype: object
+Unique next items: 90
+Min/Max len_seq: 10/10
+Sample seq_title: ["Singin' in the Rain", 'Reservoir Dogs', 'The Hudsucker Proxy', 'Little Women', 'Real Genius', 'Terminator 2: Judgment Day', 'Withnail and I', 'Unforgiven', 'Dave', 'Heathers']
+Sample next_item_name: Get Shorty
