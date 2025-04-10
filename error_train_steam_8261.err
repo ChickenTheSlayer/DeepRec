@@ -1,0 +1,20 @@
+[rank: 0] Global seed set to 1234
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.52s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.55s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.58s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.30s/it]
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/lightning_lite/plugins/environments/slurm.py:167: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python main.py --mode test --batch_size 5 --accumulate_grad ...
+  rank_zero_warn(
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/lightning_lite/plugins/environments/slurm.py:167: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python main.py --mode test --batch_size 5 --accumulate_grad ...
+  rank_zero_warn(
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/transformers/generation/configuration_utils.py:695: UserWarning: `num_beams` is set to 1. However, `length_penalty` is set to `-2.0` -- this flag is only used in beam-based generation modes. You should set `num_beams>1` or unset `length_penalty`.
+  warnings.warn(
+/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py:233: UserWarning: You called `self.log('test_hr', ...)` in your `on_test_epoch_end` but the value needs to be floating point. Converting it to torch.float32.
+  warning_cache.warn(
