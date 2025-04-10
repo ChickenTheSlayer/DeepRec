@@ -1,32 +1,0 @@
-[rank: 0] Global seed set to 1234
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:03<00:03,  1.52s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.54s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:05<00:00,  1.27s/it]
-The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-The new lm_head weights will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
-/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/lightning_lite/plugins/environments/slurm.py:167: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python main.py --mode train --batch_size 5 --accumulate_gra ...
-  rank_zero_warn(
-Using bfloat16 Automatic Mixed Precision (AMP)
-GPU available: True (cuda), used: True
-TPU available: False, using: 0 TPU cores
-IPU available: False, using: 0 IPUs
-HPU available: False, using: 0 HPUs
-/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/lightning_lite/plugins/environments/slurm.py:167: PossibleUserWarning: The `srun` command is available on your system but is not used. HINT: If your intention is to run Lightning on SLURM, prepend your python command with `srun` like so: srun python main.py --mode train --batch_size 5 --accumulate_gra ...
-  rank_zero_warn(
-/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:604: UserWarning: Checkpoint directory ./checkpoints/lastfm/ exists and is not empty.
-  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
-LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
-/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/pytorch_lightning/core/optimizer.py:382: RuntimeWarning: Found unsupported keys in the optimizer configuration: {'gradient_clip_algorithm', 'gradient_clip_val'}
-  rank_zero_warn(
-
-  | Name        | Type                 | Params
------------------------------------------------------
-0 | llama_model | PeftModelForCausalLM | 8.2 B 
-1 | rec_model   | SASRec               | 616 K 
-2 | projector   | MlpProjector         | 17.0 M
------------------------------------------------------
-184 M     Trainable params
-8.0 B     Non-trainable params
-8.2 B     Total params
-32,862.887Total estimated model params size (MB)
-/home/msai/weichen001/.conda/envs/llara/lib/python3.11/site-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 10 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
-  warnings.warn(_create_warning_msg(
-`Trainer.fit` stopped: `max_epochs=5` reached.
